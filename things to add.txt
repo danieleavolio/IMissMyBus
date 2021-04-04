@@ -1,0 +1,9 @@
+Sound to add:
+
+- pullman sound - done
+- la pioggia - done
+- il vento - done
+- engine sound - todo
+- old radio - done
+- automatic door opening - todo
+- people voices - done

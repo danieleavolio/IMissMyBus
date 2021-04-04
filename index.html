@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I miss my Bus</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="icon" href="bus.png">
+    
+    
+</head>
+<body>
+    <audio src="sounds/bus.mp3" id="busAudio"></audio>
+    <audio src="sounds/wind.mp3" id="windAudio"></audio>
+    <audio src="sounds/rain.mp3" id="rainAudio"></audio>
+    <audio src="sounds/people.mp3" id="peopleAudio"></audio>
+    <audio src="sounds/old radio.mp3" id="radioAudio"></audio>
+
+    <div class="aboutDisplay"  id="aboutDisplay">
+        <h1>About this site</h1>
+        <p>This was made taking inspiration from: <a href="https://www.imissmycafe.com">I miss my cafe</a></p>
+        <p>Every thing I used in this site is not of my property and I will leave the links where I got this material to the real authors.
+            I made this just to do some exercises in HTML, CSS and JS. What do you see here is just JS and CSS edited. Thanks to TikTok I just
+            saw the video of the "IMissMyCafe" creator and so I decided to make one of mine!. There are all the links where I got the sounds!
+        </p>
+
+        <ul><a href="https://www.youtube.com/watch?v=3Nx6NWuFVOs">Bus</a></ul>
+        <ul> <a href="https://freesfx.co.uk">Rain</a></ul>
+        <ul> <a href="https://freesfx.co.uk">Wind</a></ul>
+        <ul> <a href="https://www.youtube.com/watch?v=YsiaBSHGenE">People</a></ul>
+        <ul> <a href="https://www.youtube.com/watch?v=v2-PMmeiWFo">Old Radio</a></ul>
+    </div>
+    <h3 id="about" onclick="showModal()">about</h3>
+    <div class="innerbody">
+        <div class="leftScreen">
+            <h1>I miss my Bus</h1>
+            <p>lets do a ride ♥</p>
+            <iframe src="https://open.spotify.com/embed/playlist/3sCsyneOigMWb0i8nLXXZh" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+        <div class="bus">
+            <img src="drive.gif" alt="">
+        </div>
+    
+        <div class="rightScreen">
+            <ul onclick="playbus()">Bus</ul>
+            <div class="sliderDiv">
+                <span class="material-icons">
+                    volume_up
+                    </span>
+                <input type="range" id="busVC" class="volume-control">
+            </div>
+
+            <ul onclick="playRain()">Rain</ul>
+            <div class="sliderDiv">
+                <span class="material-icons">
+                    volume_up
+                    </span>
+                <input type="range" id="rainVC" class="volume-control">
+
+            </div>
+
+            <ul onclick="playWind()">Wind</ul>
+            <div class="sliderDiv">
+                <span class="material-icons">
+                    volume_up
+                    </span>
+                <input type="range" id="windVC" class="volume-control">
+            </div> 
+
+
+            <ul onclick="playPeople()">People</ul>
+            <div class="sliderDiv">
+                <span class="material-icons">
+                    volume_up
+                    </span>
+                <input type="range" id="peopleVC" class="volume-control">
+
+            </div>
+
+            <ul onclick="playRadio()">Old radio</ul>
+            <div class="sliderDiv">
+                <span class="material-icons">
+                    volume_up
+                    </span>
+                <input type="range" id="radioVC" class="volume-control">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        Site made by <a href="https://www.instagram.com/oh_dagne/">lovaion</a>
+    </footer>
+
+
+</body>
+<script src="script.js"></script>
+</html>
