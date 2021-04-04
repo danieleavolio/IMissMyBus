@@ -28,7 +28,7 @@ function playbus(){
 
 function showModal(){
     if (!aboutPressed){ 
-        document.getElementById("aboutDisplay").style = "transform: translateY(50%);";
+        document.getElementById("aboutDisplay").style = "transform: translateY(30%);";
         aboutPressed = true;
     }
     else{

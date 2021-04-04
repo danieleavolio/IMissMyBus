@@ -24,6 +24,8 @@ body h3:hover{
 #about{
     position: sticky;
     top: 0;
+    left: 100%;
+    width: fit-content;
 }
 
 .aboutDisplay{
@@ -47,6 +49,7 @@ body h3:hover{
 .aboutDisplay h1{
     text-align: center;
     color: white;
+    font-size: 50px;
 }
 
 .aboutDisplay a{
@@ -150,6 +153,7 @@ body h1{
     border-radius: 10px;
     display: flex;
     margin: auto;
+    width: 500px;
 }
 
 .rightScreen{
@@ -163,6 +167,7 @@ body h1{
     font-weight: 600;
     color: #904949;
     cursor: pointer;
+    width: fit-content;
 }
 
 
@@ -182,4 +187,93 @@ a:hover{
     text-decoration: none;
 }
 
+/* RESPONSIVENESS */
 
+
+@media screen and (max-width: 1250px) {
+    
+    .bus img{
+        width: 300px;
+    }
+
+    .aboutDisplay h1{
+        font-size: 40px;
+    }
+
+    .aboutDisplay{
+        font-size: 19px;
+    }
+
+  }
+
+
+@media screen and (max-width: 1010px) {
+
+    .bus img{
+        width: 200px;
+    }
+
+    .aboutDisplay h1{
+        font-size: 30px;
+    }
+
+    .aboutDisplay{
+        font-size: 18px;
+    }
+
+}
+
+
+@media screen and (max-width: 900px) {
+
+    .innerbody{
+        display: block;
+    }
+
+    .rightScreen{
+        margin: auto;
+    }
+
+    .bus img{
+        width: 500px;
+    }
+
+}
+
+
+@media screen and (max-width: 620px) {
+
+    .leftScreen h1{
+        font-size: 50px;
+    }
+
+    .bus img{
+        width: 300px;
+    }  
+
+    .aboutDisplay h1{
+        font-size: 20px;
+    }
+
+    .aboutDisplay{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .leftScreen iframe{
+        width: 250px;
+    }
+
+    .bus img{
+        width: 240px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+    .aboutDisplay{
+        font-size: 12px;
+    }
+}
