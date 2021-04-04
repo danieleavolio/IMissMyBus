@@ -266,6 +266,9 @@ a:hover{
         width: 250px;
     }
 
+    .aboutDisplay{
+        font-size: 13px;
+    }
     .bus img{
         width: 240px;
     }
