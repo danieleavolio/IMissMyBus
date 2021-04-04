@@ -275,8 +275,23 @@ a:hover{
 }
 
 @media screen and (max-width: 375px) {
+    .aboutDisplay{
+        font-size: 12px;
+    }
+}
+
+
+@media screen and (max-height: 760px) {
 
     .aboutDisplay{
         font-size: 12px;
+    }
+}
+
+
+@media screen and (max-height: 597px) {
+
+    .aboutDisplay{
+        font-size: 10px;
     }
 }
