@@ -20,71 +20,74 @@
     <audio src="sounds/people.mp3" id="peopleAudio"></audio>
     <audio src="sounds/old radio.mp3" id="radioAudio"></audio>
 
-    <div class="aboutDisplay"  id="aboutDisplay">
-        <h1>About this site</h1>
-        <p>This was made taking inspiration from: <a href="https://www.imissmycafe.com">I miss my cafe</a></p>
-        <p>Every thing I used in this site is not of my property and I will leave the links where I got this material to the real authors.
+    <div class="aboutDisplay aboutDisplayColor"  id="aboutDisplay">
+        <h1 class="textChange">About this site</h1>
+        <p class="textChange">This was made taking inspiration from: <a href="https://www.imissmycafe.com">I miss my cafe</a></p>
+        <p class="textChange">Every thing I used in this site is not of my property and I'll leave links to the material I used.
             I made this just to do some exercises in HTML, CSS and JS. What do you see here is just JS and CSS edited. Thanks to TikTok I just
-            saw the video of the "IMissMyCafe" creator and so I decided to make one of mine!. There are all the links where I got the sounds!
+            saw the video of the "IMissMyCafe" creator and so I decided to make one of mine!. Those are the links!
         </p>
 
-        <ul><a href="https://www.youtube.com/watch?v=3Nx6NWuFVOs">Bus</a></ul>
-        <ul> <a href="https://freesfx.co.uk">Rain</a></ul>
-        <ul> <a href="https://freesfx.co.uk">Wind</a></ul>
-        <ul> <a href="https://www.youtube.com/watch?v=YsiaBSHGenE">People</a></ul>
-        <ul> <a href="https://www.youtube.com/watch?v=v2-PMmeiWFo">Old Radio</a></ul>
+        <ul class="textChange"><a href="https://www.youtube.com/watch?v=3Nx6NWuFVOs">Bus</a></ul>
+        <ul class="textChange"> <a href="https://freesfx.co.uk">Rain</a></ul>
+        <ul class="textChange"> <a href="https://freesfx.co.uk">Wind</a></ul>
+        <ul class="textChange"> <a href="https://www.youtube.com/watch?v=YsiaBSHGenE">People</a></ul>
+        <ul class="textChange"> <a href="https://www.youtube.com/watch?v=v2-PMmeiWFo">Old Radio</a></ul>
     </div>
-
-    <h3 id="about" onclick="showModal()">about</h3>
-    <div class="innerbody">
-        <div class="leftScreen">
-            <h1>I miss my Bus</h1>
-            <p>lets do a ride ♥</p>
-            <iframe src="https://open.spotify.com/embed/playlist/3sCsyneOigMWb0i8nLXXZh" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    
+    <h3 id="about" class="textChange" onclick="showModal()">about</h3>
+    <div class="innerbody" id="innerBody">
+        <div class="leftScreen" id="leftScreen">
+            <h1 class="textChange">I miss my Bus</h1>
+            <p class="textChange">lets do a ride ♥</p>
+            <iframe src="https://open.spotify.com/embed/playlist/41lCZ9rfNR7umrQeJPDttz" class="spotify" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                <span class="material-icons darkmode textChange" onclick="changeMode()">
+                    brightness_2
+                </span>
         </div>
-        <div class="bus">
+        <div class="bus" id="bus">
             <img src="drive.gif" alt="">
         </div>
     
-        <div class="rightScreen">
-            <ul onclick="playbus()">Bus</ul>
+        <div class="rightScreen" id="rightScreen">
+            <ul class="textChange" onclick="playbus()">Bus</ul>
             <div class="sliderDiv">
-                <span class="material-icons">
+                <span class="material-icons textChange">
                     volume_up
                     </span>
                 <input type="range" id="busVC" class="volume-control">
             </div>
 
-            <ul onclick="playRain()">Rain</ul>
+            <ul class="textChange" onclick="playRain()">Rain</ul>
             <div class="sliderDiv">
-                <span class="material-icons">
+                <span class="material-icons textChange">
                     volume_up
                     </span>
                 <input type="range" id="rainVC" class="volume-control">
 
             </div>
 
-            <ul onclick="playWind()">Wind</ul>
+            <ul class="textChange" onclick="playWind()">Wind</ul>
             <div class="sliderDiv">
-                <span class="material-icons">
+                <span class="material-icons textChange">
                     volume_up
                     </span>
                 <input type="range" id="windVC" class="volume-control">
             </div> 
 
 
-            <ul onclick="playPeople()">People</ul>
+            <ul class="textChange" onclick="playPeople()">People</ul>
             <div class="sliderDiv">
-                <span class="material-icons">
+                <span class="material-icons textChange">
                     volume_up
                     </span>
                 <input type="range" id="peopleVC" class="volume-control">
 
             </div>
 
-            <ul onclick="playRadio()">Old radio</ul>
+            <ul class="textChange" onclick="playRadio()">Old radio</ul>
             <div class="sliderDiv">
-                <span class="material-icons">
+                <span class="material-icons textChange">
                     volume_up
                     </span>
                 <input type="range" id="radioVC" class="volume-control">
@@ -93,7 +96,8 @@
     </div>
 
     <footer>
-        Site made by <a href="https://www.instagram.com/oh_dagne/">lovaion</a>
+        <p>Site made by <a href="https://www.instagram.com/oh_dagne/">lovaion</a></p>
+        <a href="https://www.buymeacoffee.com/Lovaion"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=Lovaion&button_colour=FFDD00&font_colour=000000&font_family=Bree&outline_colour=000000&coffee_colour=ffffff"></a>
     </footer>
 
 

@@ -17,28 +17,37 @@ body h3:hover{
 }
 
 .leftScreen p{
-    font-style: italic;
+    font-style: italic ;
+}
+
+footer{
+    display: grid   ;
+}
+
+footer a{
+    width: fit-content;
 }
 
 
+.darkmode{
+    cursor: pointer;
+}
 .stickyButton{
-    position: fixed;
-    bottom: 0;
-    right: 0;
+    position: sticky;
+    top: 100%;
+    left: 100%;
     margin: 0 10px 10px 0;
     width: fit-content;
     font-size: 20px;
-    background-color: #904949;
     border-radius: 8px;
     border: none;
     color: #ffe8d6;
     transition: all 0.3s ease;
     outline: none;
-    font-weight: 700px;
 }
 
 .stickyButton:hover{
-    background-color: #db8080;
+    transform: scale(1.1);
 }
 
 #about{
@@ -54,7 +63,6 @@ body h3:hover{
     border-radius: 10px;
     left:0;
     right: 0;
-    background-color: #904949;
     margin: auto;
     padding: 10px;
     position: fixed;
@@ -66,6 +74,10 @@ body h3:hover{
     color: white;
 }
 
+.aboutDisplayColor{
+    background-color: #904949;
+}
+
 .aboutDisplay h1{
     text-align: center;
     color: white;
@@ -75,6 +87,10 @@ body h3:hover{
 .aboutDisplay a{
     text-decoration: underline;
     color: #ffd9bc;
+}
+
+.spotify{
+    border-radius: 8px;
 }
 
 body::-webkit-scrollbar {
@@ -102,6 +118,7 @@ border: 3px;  /* creates padding around scroll thumb */
     justify-content: space-around;
     background-color: #ffe8d6;
     border-radius: 20px ;
+    transition: all 0.3s ease;
     /* comandi giusti
     background-image: url("POV.jpg");
     background-size: cover; */
@@ -149,8 +166,14 @@ body h1{
     width: 25px;
     height: 25px;
     border-radius: 50%; 
-    background: #904949;
+    background: #ffd9bc;
     cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.volume-control::-webkit-slider-thumb:hover{
+    background: #ffd9bc;
+
 }
 
 .volume-control::-webkit-range-thumb {
@@ -167,7 +190,7 @@ body h1{
     text-align: center;
     border-radius: 10px;
     background-color: #ffe8d6;  
-    transition: all 1s ease;
+    transition: all 0.3 s ease;
 }
 .bus{
    width: 100%;
@@ -192,6 +215,7 @@ body h1{
     justify-content: center;
     border-radius: 10px;
     background-color: #ffe8d6;
+    transition: all 0.3s ease;
 }
 
 .rightScreen ul{
